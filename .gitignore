@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.env
+.env.local
+.env.*.local
+output/audio-cache/
+output/audio/
+output/voice-audition/
+output/episodes/*/audio/
+output/episodes/*/preview/
+output/episodes/*/.qa-tmp/
+output/episodes/*/*.mp4

@@ -1,0 +1,32 @@
+{
+  "name": "animasi-shorts-engine",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "typecheck": "tsc --noEmit",
+    "audit": "tsx src/render/audit.ts",
+    "map": "tsx src/render/generateProjectMap.ts",
+    "render": "tsx src/render/exportMp4.ts",
+    "qa:extract": "tsx src/render/qaExtract.ts",
+    "qa:clean": "tsx src/render/qaClean.ts",
+    "episode:new": "tsx src/episodes/scaffoldEpisode.ts",
+    "audio:generate": "tsx src/audio/generateEpisodeAudio.ts",
+    "voice:audition": "tsx src/audio/auditionVoices.ts",
+    "check": "npm run typecheck && npm run audit"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.10",
+    "three": "^0.174.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "@types/three": "^0.174.0",
+    "playwright-core": "^1.51.0",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2",
+    "vite": "^6.2.2"
+  }
+}
